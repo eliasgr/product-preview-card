@@ -1,15 +1,27 @@
+/* eslint-disable @next/next/no-img-element */
 const ProductCard = () => {
 	return (
-		<div className='bg-white rounded-lg flex pb-5 sm:pb-0 flex-col sm:flex-row max-w-2xl sm:max-h-[650px] overflow-hidden  mx-auto'>
-			<div className='bg-mobile sm:bg-desktop bg-cover  rounded-t-lg h-80  sm:h-screen sm:rounded-l-lg sm:rounded-tr-none sm:w-1/2 '></div>
-			<div className='px-5 h-3/5 pb-4 sm:w-1/2  overflow-hidden '>
-				<h2 className='pt-4 font-montserrat font-medium text-dark-grayish-blue text-xs   tracking-[.25em]'>
-					PERFUME
+		<div className='bg-white rounded-lg overflow-hidden flex flex-col sm:flex-row sm:w-[600px] mx-auto '>
+			<div>
+				<img
+					className='block sm:hidden'
+					src='/images/image-product-mobile.jpg'
+					alt='Gabrielle Parfum'
+				/>
+				<img
+					className='hidden sm:block h-[450px] flex-1'
+					src='/images/image-product-desktop.jpg'
+					alt='Gabrielle Parfum'
+				/>
+			</div>
+			<div className='p-5 sm:flex-1 sm:p-8 overflow-hidden '>
+				<h2 className='pt-4 font-montserrat font-medium text-dark-grayish-blue text-xs uppercase tracking-[.3em]'>
+					Perfume
 				</h2>
-				<h1 className='pt-4 font-fraunces font-bold text-3xl'>
+				<h1 className='pt-4 text-dark-blue font-fraunces font-bold text-3xl'>
 					Gabrielle Essence Eau De Parfum
 				</h1>
-				<p className='pt-4 text-sm font-montserrat text-dark-grayish-blue '>
+				<p className='pt-5 leading-6 text-sm font-montserrat text-dark-grayish-blue '>
 					A floral, solar and voluptuous interpretation composed by oliver
 					Polge, Perfumer-Creator for the House of CHANEL
 				</p>
