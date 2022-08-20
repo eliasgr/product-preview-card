@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+	body {
+		@apply bg-cream;
+		@apply p-5;
+	}
+
+	/* montserrat-500 - latin */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url('../public/fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+			url('../public/fonts/montserrat-v25-latin-500.woff') format('woff');
+	}
+	/* montserrat-700 - latin */
+	@font-face {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url('../public/fonts/montserrat-v25-latin-700.woff2') format('woff2'),
+			url('../public/fonts/montserrat-v25-latin-700.woff') format('woff');
+	}
+
+	/* fraunces-400*/
+	@font-face {
+		font-family: 'Fraunces';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url('../public/fonts/fraunces-v23-latin-regular.woff2') format('woff2'),
+			url('../public/fonts/fraunces-v23-latin-regular.woff') format('woff');
+	}
+
+	/* fraunces-700*/
+	@font-face {
+		font-family: 'Fraunces';
+		font-style: normal;
+		font-weight: 700;
+		font-display: swap;
+		src: url('../public/fonts/fraunces-v23-latin-700.woff2') format('woff2'),
+			url('../public/fonts/fraunces-v23-latin-700.woff') format('woff');
+	}
+}
